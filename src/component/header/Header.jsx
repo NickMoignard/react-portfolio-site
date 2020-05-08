@@ -60,26 +60,7 @@ class Header extends Component{
                     <div className="header-right">
                         <nav className="mainmenunav d-lg-block">
                             <ul className="mainmenu">
-                                <li className="has-droupdown"><Link to="#">Home</Link>
-                                    <ul className="submenu">
-                                        <li><Link to="/main-demo">Main Demo</Link></li>
-                                        <li><Link to="/dark-main-demo">Main Demo Dark</Link></li>
-                                        <li><Link to="/creative-agency">Creative Agency</Link></li>
-                                        <li><Link to="/creative-landing">Creative One Page</Link></li>
-                                        <li><Link to="/creative-portfolio">Creative Portfolio</Link></li>
-                                        <li><Link to="/personal-portfolio">Personal Portfolio</Link></li>
-                                        <li><Link to="/portfolio-landing">Portfolio One Page</Link></li>
-                                        <li><Link to="/dark-portfolio-landing">Portfolio One Page 02</Link></li>
-                                        <li><Link to="/digital-agency">Digital Agency</Link></li>
-                                        <li><Link to="/startup">Startup</Link></li>
-                                        <li><Link to="/paralax">Paralax</Link></li>
-                                        <li><Link to="/portfolio-home">Minimal Portfolio</Link></li>
-                                        <li><Link to="/business">Business</Link></li>
-                                        <li><Link to="/home-particles">Home Particles</Link></li>
-                                        <li><Link to="/studio-agency">Studio Agency</Link></li>
-                                        <li><Link to="/designer-portfolio">Designer Portfolio</Link></li>
-                                    </ul>
-                                </li>
+                                <li className="has-droupdown"><Link to="#">Home</Link></li>
                                 <li className="has-droupdown"><Link to="/service" >Service</Link>
                                     <ul className="submenu">
                                         <li><Link to="/service">Service</Link></li>
@@ -121,7 +102,8 @@ class Header extends Component{
                         </nav>
                         <div className="header-btn">
                             <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
-                                <span>buy now</span>
+
+                                <span>chat now</span>
                             </a>
                         </div>
                         {/* Start Humberger Menu  */}
