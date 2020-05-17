@@ -50,28 +50,7 @@ class MainDemo extends Component{
                 </div>
                 {/* End Portfolio Area */}
 
-                {/* Start CounterUp Area */}
-                <div className="rn-counterup-area pt--25 pb--110 bg_color--1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title text-center">
-                                    <h3 className="fontWeight500">Our Fun Facts</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <CounterOne />
-                    </div>
-                </div>
-                {/* End CounterUp Area */}
 
-                {/* Start Testimonial Area */}
-                <div className="rn-testimonial-area bg_color--5 ptb--120">
-                    <div className="container">
-                        <Testimonial />
-                    </div>
-                </div>
-                {/* End Testimonial Area */}
 
                 {/* Start Blog Area */}
                 <div className="rn-blog-area pt--120 bg_color--1 mb-dec--30">
@@ -79,8 +58,8 @@ class MainDemo extends Component{
                         <div className="row align-items-end">
                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div className="section-title text-left">
-                                    <h2>Latest News</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2>Blog</h2>
+                                    <p>Articles we love</p>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">

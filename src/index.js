@@ -9,6 +9,9 @@ import './index.scss';
 // import Layout from "./component/common/App";
 
 
+// Dark Home Layout 
+import DarkMainDemo from './dark/MainDemo';
+
 // Home layout
 import Demo from './page-demo/Demo';
 import MainDemo from './home/MainDemo';
@@ -28,8 +31,7 @@ import DesignerPortfolio from './home/DesignerPortfolio';
 import InteriorLanding from './home/Interior';
 import CorporateBusiness from './home/CorporateBusiness';
 
-// Dark Home Layout 
-import DarkMainDemo from './dark/MainDemo';
+
 import DarkPortfolioLanding from './dark/PortfolioLanding';
 
 // Element Layout
