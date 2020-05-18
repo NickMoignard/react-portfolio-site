@@ -12,7 +12,7 @@ import Testimonial from "../elements/Testimonial";
 import AboutTwo from "../component/HomeLayout/homeOne/AboutTwo";
 import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BlogContent from "../elements/blog/BlogContent";
-import BrandTwo from "../elements/BrandTwo";
+import TechLogos from "../elements/TechLogos";
 import Helmet from "../component/common/Helmet";
 
 const SlideList = [
@@ -169,7 +169,7 @@ class Startup extends Component{
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <BrandTwo />
+                                <TechLogos />
                             </div>
                         </div>
                     </div>

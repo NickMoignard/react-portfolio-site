@@ -8,7 +8,7 @@ import Footer from "../component/footer/Footer";
 import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
 import BlogContent from "../elements/blog/BlogContent";
-import BrandTwo from "../elements/BrandTwo";
+import TechLogos from "../elements/TechLogos";
 import ServiceList from "../elements/service/ServiceList";
 import Helmet from "../component/common/Helmet";
 
@@ -227,7 +227,7 @@ class Paralax extends Component{
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12">
-                                    <BrandTwo />
+                                    <TechLogos />
                                 </div>
                             </div>
                         </div>

@@ -3,7 +3,7 @@ import PageHelmet from "../component/common/Helmet";
 import Breadcrumb from "../elements/common/Breadcrumb";
 import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
-import BrandTwo from "../elements/BrandTwo";
+import TechLogos from "../elements/TechLogos";
 import { FaFacebookF , FaLinkedinIn , FaTwitter } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
@@ -184,7 +184,7 @@ class About extends Component{
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <BrandTwo />
+                                <TechLogos />
                             </div>
                         </div>
                     </div>

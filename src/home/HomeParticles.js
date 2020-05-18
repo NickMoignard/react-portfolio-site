@@ -10,7 +10,7 @@ import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
 import Team from "../elements/Team";
 import BlogContent from "../elements/blog/BlogContent";
-import BrandTwo from "../elements/BrandTwo";
+import TechLogos from "../elements/TechLogos";
 import FooterTwo from "../component/footer/FooterTwo";
 import Contact from "../elements/contact/ContactTwo";
 import Helmet from "../component/common/Helmet";
@@ -385,7 +385,7 @@ class HomeParticles extends Component{
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <BrandTwo />
+                                <TechLogos />
                             </div>
                         </div>
                     </div>

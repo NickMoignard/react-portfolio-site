@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import { slideSlick } from "../page-demo/script";
 import ServiceList from "../elements/service/ServiceList";
 import BlogContent from "../elements/blog/BlogContent";
-import BrandTwo from "../elements/BrandTwo";
+import TechLogos from "../elements/TechLogos";
 import PortfolioList from "../elements/portfolio/PortfolioList";
 import Header from "../component/header/Header";
 import FooterTwo from "../component/footer/FooterTwo";
@@ -106,7 +106,7 @@ class Business extends Component{
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-12">
-                                <BrandTwo />
+                                <TechLogos />
                             </div>
                         </div>
                     </div>

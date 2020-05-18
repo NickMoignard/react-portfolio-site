@@ -6,7 +6,7 @@ import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 import BrandOne from "../elements/Brand";
-import BrandTwo from "../elements/BrandTwo";
+import TechLogos from "../elements/TechLogos";
 
 const Brand = () => {
     return (
@@ -41,7 +41,7 @@ const Brand = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <BrandTwo />
+                                <TechLogos />
                             </div>
                         </div>
                     </div>

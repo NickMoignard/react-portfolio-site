@@ -3,7 +3,7 @@ import PageHelmet from "../component/common/Helmet";
 import { FiHeadphones , FiMail , FiMapPin } from "react-icons/fi";
 import GoogleMapReact from 'google-map-react';
 import ContactTwo from "../elements/contact/ContactTwo";
-import BrandTwo from "../elements/BrandTwo";
+import TechLogos from "../elements/TechLogos";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
@@ -126,7 +126,7 @@ class Contact extends Component{
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <BrandTwo />
+                                <TechLogos />
                             </div>
                         </div>
                     </div>
