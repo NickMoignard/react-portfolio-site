@@ -11,7 +11,7 @@ import Testimonial from "../elements/Testimonial";
 import About from "../component/HomeLayout/homeOne/About";
 import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BlogContent from "../elements/blog/BlogContent";
-import BrandTwo from "../elements/BrandTwo";
+import TechLogos from "../elements/TechLogos";
 import Helmet from "../component/common/Helmet";
 
 class MainDemo extends Component{
@@ -97,7 +97,7 @@ class MainDemo extends Component{
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <BrandTwo />
+                                <TechLogos />
                             </div>
                         </div>
                     </div>
