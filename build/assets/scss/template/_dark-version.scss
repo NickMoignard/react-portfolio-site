@@ -35,7 +35,9 @@
     .footer-right {
         background: #101010;
     }
-
+    ul.brand-style-2 img {
+        filter: invert(0);
+    }
     h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         color: #ffffff;
     }
@@ -87,7 +89,7 @@
     }
     .contact-form--1 input, .contact-form--1 textarea ,
     .header-area.color-black a.rn-btn {
-        border: 2px solid rgba(255,255,255,1);
+        border: 2px solid rgba(255,255,255,0.2);
     }
     .header-area.color-black a.rn-btn:hover{
         border-color: $theme-color;
