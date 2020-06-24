@@ -10,22 +10,22 @@ import Footer from "../component/footer/Footer";
 const ServiceList = [
     {
         icon: <FiCast />,
-        title: 'Business Stratagy',
+        title: 'Consulting Services',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
         icon: <FiLayers />,
-        title: 'Website Development',
+        title: 'Bespoke Software Development',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
         icon: <FiUsers />,
-        title: 'Marketing & Reporting',
+        title: 'Team Augmentation',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
         icon: <FiMonitor />,
-        title: 'Mobile App Development',
+        title: 'Shopify Solutions',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
@@ -56,7 +56,7 @@ class Service extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center mb--30">
-                                    <h2>Digital Marketing</h2>
+                                    <h2>Development</h2>
                                     <p>There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration.</p>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@ class Service extends Component{
                 {/* End Service Area */}
 
                 {/* Start Service Area */}
-                <div className="service-area ptb--120 bg_color--1">
+                {/* <div className="service-area ptb--120 bg_color--1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -115,7 +115,7 @@ class Service extends Component{
                 {/* End Service Area */}
 
                 {/* Start Service Area */}
-                <div className="service-area creative-service-wrapper pt--90 pb--120 bg_color--5">
+                {/* <div className="service-area creative-service-wrapper pt--90 pb--120 bg_color--5">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -143,11 +143,11 @@ class Service extends Component{
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/* End Service Area */}
 
                 {/* Start Service Area */}
-                <div className="service-area creative-service-wrapper pt--90 pb--120 bg_color--1">
+                {/* <div className="service-area creative-service-wrapper pt--90 pb--120 bg_color--1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -175,7 +175,7 @@ class Service extends Component{
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/* End Service Area */}
 
                 {/* Start Back To Top */}
