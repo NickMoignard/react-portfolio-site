@@ -4,23 +4,23 @@ import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
 const ServiceList = [
     {
         icon: <FiCast />,
-        title: 'Business Stratagy',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: 'Consulting Services',
+        description: 'Not sure what you need but know you need a tech guy keep end-to-end software development fast and economically sound.'
     },
     {
         icon: <FiLayers />,
-        title: 'Website Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: 'Bespoke Software Development',
+        description: 'We work with you to create mobile app solutions and responsive websites that enhance productivity and grow customer engagement.'
     },
     {
         icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: 'Team Augmentation',
+        description: 'Our developers provide your project with extra skills and resources, so your existing software team gets the right support.'
     },
     {
         icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: 'Shopify Solutions',
+        description: 'Our marketing and software specialists work together to optimize your eCommerce platform, transforming more clicks into sales.'
     }
 ]
 
