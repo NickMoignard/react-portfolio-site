@@ -19,7 +19,7 @@ class MainDemo extends Component{
         const PostList = BlogContent.slice(0 , 3);
         return(
             <div className="active-dark"> 
-                <Helmet pageTitle="Main Demo Dark" />
+                <Helmet pageTitle="Home" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                 {/* Start Slider Area   */}
@@ -29,7 +29,7 @@ class MainDemo extends Component{
                 {/* End Slider Area   */}
 
                 {/* Start About Area */}
-                <div className="about-area about-position-top pb--120 bg_color--1">
+                <div className="about-area about-position-top ptb--120 bg_color--1">
                     <About />
                 </div>
                 {/* End About Area */}
