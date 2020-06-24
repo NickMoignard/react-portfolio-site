@@ -3,18 +3,18 @@ import React, { Component } from "react";
 const ServiceList = [
     {
         icon: '01',
-        title: 'Business Stratagy',
-        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+        title: 'Full-Service Development',
+        description: 'We care about the success of your project no matter its size, and we’ll work with you to craft software that scales with your business.'
     },
     {
         icon: '02',
-        title: 'Website Development',
-        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+        title: 'Modifying Existing Systems',
+        description: 'We’re not here to take $2 million and build some new widget you didn’t ask for. Our developers are ready to jump in, become part of your team, and start improving your profits.'
     },
     {
         icon: '03',
-        title: 'Marketing & Reporting',
-        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+        title: 'Advice and Solutions',
+        description: 'We deliver technology that caters to your unique needs. If we can’t find the right solution for your business, we’ll help you find someone who can.'
     },
 ]
 
