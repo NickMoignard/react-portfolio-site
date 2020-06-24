@@ -14,8 +14,8 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 class Contact extends Component{
     static defaultProps = {
         center: {
-            lat: 59.95,
-            lng: 30.33
+            lat: -37.840935,
+            lng: 144.946457
         },
         zoom: 11
     };
@@ -33,7 +33,7 @@ class Contact extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">Cntact With Us</h2>
+                                    <h2 className="title theme-gradient">Contact Us</h2>
                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
                                 </div>
                             </div>
@@ -56,8 +56,8 @@ class Contact extends Component{
                                     </div>
                                     <div className="inner">
                                         <h4 className="title">Contact With Phone Number</h4>
-                                        <p><a href="tel:+057 254 365 456">+057 254 365 456</a></p>
-                                        <p><a href="tel:+856 325 652 984">+856 325 652 984</a></p>
+                                        <p><a href="tel:+61434232906">+61 434 232 906</a></p>
+                                        <p><a href="tel:+61415909807">+61 415 909 807</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -71,8 +71,8 @@ class Contact extends Component{
                                     </div>
                                     <div className="inner">
                                         <h4 className="title">Email Address</h4>
-                                        <p><a href="mailto:admin@gmail.com">admin@gmail.com</a></p>
-                                        <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                                        <p><a href="mailto:nicklmoignard@gmail.com">nicklmoignard@gmail.com</a></p>
+                                        <p><a href="mailto:schubach.james@gmail.com">schubach.james@gmail.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ class Contact extends Component{
                                     </div>
                                     <div className="inner">
                                         <h4 className="title">Location</h4>
-                                        <p>5678 Bangla Main Road, cities 580 <br /> GBnagla, example 54786</p>
+                                        <p>Melbourne, Victoria <br /> Australia, 3000</p>
                                     </div>
                                 </div>
                             </div>
