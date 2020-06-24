@@ -36,7 +36,12 @@ import DarkPortfolioLanding from './dark/PortfolioLanding';
 
 // Element Layout
 import Service from "./elements/Service";
-import ServiceDetails from "./elements/ServiceDetails";
+import Shopify from './elements/Shopify';
+import ReactJS from "./elements/ReactJS";
+import Ruby from "./elements/Ruby";
+import Javascript from "./elements/Javascript";
+import PHP from "./elements/PHP";
+import DevOp from "./elements/DevOp";
 import About from "./elements/About";
 import Contact from "./elements/Contact";
 import PortfolioDetails from "./elements/PortfolioDetails";
@@ -62,6 +67,7 @@ import PricingTable from "./blocks/PricingTable";
 
 import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+
 
 
 class Root extends Component{
@@ -93,7 +99,12 @@ class Root extends Component{
 
                     {/* Element Layot */}
                     <Route exact path={`${process.env.PUBLIC_URL}/service`} component={Service}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/shopify`} component={Shopify}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/react-js`} component={ReactJS}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/ruby`} component={Ruby}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/javascript`} component={Javascript}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/php`} component={PHP}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/dev-ops`} component={DevOp}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
