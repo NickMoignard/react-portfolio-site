@@ -34,7 +34,7 @@ class Header extends Component{
             }
         }
         const { logo, color='default-color' } = this.props;
-        let logoUrl = <img style={{width:"120px"}} src="/assets/images/logo/MDS_A.png" alt="M.D.S." />;
+        let logoUrl = <img style={{width:"120px", transform: "scale(2)" }} src="/assets/images/logo/MDS_A.png" alt="M.D.S." />;
         
         
         return(
@@ -50,11 +50,16 @@ class Header extends Component{
                     <div className="header-right">
                         <nav className="mainmenunav d-lg-block">
                             <ul className="mainmenu">
-                                <li className="has-droupdown"><Link to="#">Home</Link></li>
+                                <li className="has-droupdown"><Link to="/">Home</Link></li>
                                 <li className="has-droupdown"><Link to="/service" >Service</Link>
                                     <ul className="submenu">
                                         <li><Link to="/service">Service</Link></li>
-                                        <li><Link to="/service-details">Service Details</Link></li>
+                                        <li><Link to="/Shopify">Shopify</Link></li>
+                                        <li><Link to="/react-js">React JS</Link></li>
+                                        <li><Link to="/ruby">Ruby</Link></li>
+                                        <li><Link to="/javascript">Javascript</Link></li>
+                                        <li><Link to="/php">PHP</Link></li>
+                                        <li><Link to="/dev-ops">Development Operations</Link></li>
                                     </ul>
                                 </li>
                                 <li><Link to="/about" >About</Link></li>
