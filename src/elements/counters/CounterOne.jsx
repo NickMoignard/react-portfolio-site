@@ -15,15 +15,15 @@ class CounterOne extends Component{
         let Data = [
             {
                 countNum : 199,
-                countTitle: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.',
+                countTitle: 'Successfully completed projects to date.',
             },
             {
                 countNum : 575,
-                countTitle: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.',
+                countTitle: 'Happy and appreciative customers.',
             },
             {
                 countNum : 69,
-                countTitle: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.',
+                countTitle: 'Combined years of experience.',
             },
         ];
 
