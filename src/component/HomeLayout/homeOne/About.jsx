@@ -3,16 +3,15 @@ import React, { Component } from "react";
 class About extends Component{
     render(){
         let title = 'About',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,';
+        description = 'We’re a Melbourne-based digital product studio providing expert advice and software solutions. We can help adapt your existing processes or start from scratch on your latest project, with a versatile approach and focus on the bottom line that leaves more money in your pocket.';
         return(
             <React.Fragment>
                 <div className="about-wrapper">
                     <div className="container">
                         <div className="row row--35 align-items-center">
-
                             <div className="col-lg-5 col-md-12">
-                                <div className="thumbnail">
-                                    <img className="w-100" src="/assets/images/about/about-1.jpg" alt="About Images"/>
+                                <div style={{marginTop:"initial"}} className="thumbnail">
+                                    <img className="w-100"  src="https://cdn.pixabay.com/photo/2017/03/04/12/15/programming-2115930_960_720.jpg" alt="About Images"/>
                                 </div>
                             </div>
 
@@ -25,14 +24,14 @@ class About extends Component{
                                     <div className="row mt--30 mt_sm--10">
                                         <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                             <div className="about-us-list">
-                                                <h3 className="title">Who we are</h3>
-                                                <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                <h3 className="title">Our Team</h3>
+                                                <p>We work with a network of talented / expert / brilliant freelancers, allowing us to bring a diverse skill set and over X years of combined experience to every project.</p>
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                             <div className="about-us-list">
-                                                <h3 className="title">Who we are</h3>
-                                                <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                <h3 className="title">Our Clients</h3>
+                                                <p>We build lasting friendships with each and every one of our clients so that we can deliver the solutions they need on time, all the time.</p>
                                             </div>
                                         </div>
                                     </div>
