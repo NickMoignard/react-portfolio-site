@@ -45,15 +45,15 @@ Slider Default Style
         }
         h1 {
             &.title {
-                font-size: 125px;
+                font-size: 78px;
                 font-weight: 900;
                 text-transform: uppercase;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
-                line-height: 130px;
+                line-height: 83px;
                 @media #{$laptop-device} {
-                    font-size: 100px;
-                    line-height: 112px;
+                    font-size: 78px;
+                    line-height: 83px;
                 }
                 @media #{$lg-layout} {
                     font-size: 90px;
