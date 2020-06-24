@@ -38,7 +38,7 @@ const PortfolioList = [
 
 class Portfolio extends Component{
     render(){
-        let title = 'Our Works',
+        let title = 'Our Projects',
         description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.';
         return(
             <React.Fragment>
