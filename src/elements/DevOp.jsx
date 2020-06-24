@@ -7,7 +7,7 @@ import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 
 
-class Shopify extends Component{
+class ServiceDetails extends Component{
     constructor () {
         super()
         this.state = {
@@ -120,4 +120,4 @@ class Shopify extends Component{
         )
     }
 }
-export default Shopify;
+export default ServiceDetails;

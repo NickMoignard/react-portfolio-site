@@ -54,20 +54,33 @@ class Shopify extends Component{
                                         <div className="row sercice-details-content pb--80 align-items-center">
                                             <div className="col-lg-6 col-12">
                                                 <div className="thumb">
-                                                    <img className="w-100" src="/assets/images/service/service-01.png" alt="Service Images"/>
+                                                    <img className="w-100" src="https://thumbs.dreamstime.com/z/shopify-company-logo-samsung-mobile-commerce-platform-allows-anyone-to-easily-sell-online-retail-location-99402611.jpg" alt="Service Images"/>
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 col-12">
                                                 <div className="details mt_md--30 mt_sm--30">
-                                                    <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing</p>
-                                                    <p>hidden in the middle of text. All the Lorem Ipsum generators tend toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet.</p>
-                                                    <h4 className="title">Proceess of metel</h4>
+                                                    {/* <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing</p>
+                                                    <p>hidden in the middle of text. All the Lorem Ipsum generators tend toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet.</p> */}
+                                                    <h4 className="title">Shopify price details</h4>
                                                     <ul className="liststyle">
-                                                        <li>Yet this above sewed flirted opened ouch</li>
-                                                        <li>Goldfinch realistic sporadic ingenuous</li>
-                                                        <li>Abominable this abidin far successfully then like piquan</li>
-                                                        <li>Risus commodo viverra</li>
-                                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                                                        <li>Debugging $75 AUD per hour</li>
+                                                        <li>Site Speed Audit (includes a report with actionable tasks) $50</li>
+                                                        <li>SEO Boost $1500 ( 80+ mobile 95+ desktop google site speed score )
+                                                            <ul class="liststyle">
+                                                                <li>Blocking Js removed and made asynchronous</li>
+                                                                <li>Image Optimisation</li>
+                                                                <li>Cache Policy</li>
+                                                                <li>CDN updated</li>
+                                                                <li>Theme Refactor</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Theme Customisation $50 per hour</li>
+                                                        <li>Shopify Application Development</li>
+                                                        <ul class="liststyle">
+                                                            <li>Basic $750</li>
+                                                            <li>Medium $5000</li>
+                                                            <li>Advanced $20,000+</li>
+                                                        </ul>
                                                     </ul>
                                                 </div>
                                             </div>
