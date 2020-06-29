@@ -5,13 +5,22 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
+import CurrenyConversion from "../component/common/CurrenyConversion";
+
 
 
 class Shopify extends Component{
     constructor () {
         super()
         this.state = {
-          isOpen: false
+          isOpen: false,
+          debug: '75',
+          audit: '50',
+          seo: '1500',
+          theme: '50',
+          basic: '750',
+          medium: '5000',
+          advanced: '20000' 
         }
         this.openModal = this.openModal.bind(this)
     }
@@ -62,11 +71,12 @@ class Shopify extends Component{
                                                     {/* <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing</p>
                                                     <p>hidden in the middle of text. All the Lorem Ipsum generators tend toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet.</p> */}
                                                     <h4 className="title">Shopify price details</h4>
+                                                    
                                                     <ul className="liststyle">
-                                                        <li>Debugging $75 AUD per hour</li>
-                                                        <li>Site Speed Audit (includes a report with actionable tasks) $50</li>
-                                                        <li>SEO Boost $1500 ( 80+ mobile 95+ desktop google site speed score )
-                                                            <ul class="liststyle">
+                                                        <li>Debugging $<CurrenyConversion val={this.state.debug}/> per hour</li>
+                                                        <li>Site Speed Audit (includes a report with actionable tasks) $<CurrenyConversion val={this.state.audit}/></li>
+                                                        <li>SEO Boost $<CurrenyConversion val={this.state.seo}/> ( 80+ mobile 95+ desktop google site speed score )
+                                                            <ul className="liststyle">
                                                                 <li>Blocking Js removed and made asynchronous</li>
                                                                 <li>Image Optimisation</li>
                                                                 <li>Cache Policy</li>
@@ -74,12 +84,12 @@ class Shopify extends Component{
                                                                 <li>Theme Refactor</li>
                                                             </ul>
                                                         </li>
-                                                        <li>Theme Customisation $50 per hour</li>
+                                                        <li>Theme Customisation $<CurrenyConversion val={this.state.theme}/> per hour</li>
                                                         <li>Shopify Application Development</li>
-                                                        <ul class="liststyle">
-                                                            <li>Basic $750</li>
-                                                            <li>Medium $5000</li>
-                                                            <li>Advanced $20,000+</li>
+                                                        <ul className="liststyle">
+                                                            <li>Basic $<CurrenyConversion val={this.state.basic}/></li>
+                                                            <li>Medium $<CurrenyConversion val={this.state.medium}/></li>
+                                                            <li>Advanced $<CurrenyConversion val={this.state.advanced}/>+</li>
                                                         </ul>
                                                     </ul>
                                                 </div>
