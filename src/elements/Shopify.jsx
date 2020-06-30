@@ -5,7 +5,8 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
-import CurrenyConversion from "../component/common/CurrenyConversion";
+import axios from 'axios'
+
 
 
 
@@ -20,14 +21,48 @@ class Shopify extends Component{
           theme: '50',
           basic: '750',
           medium: '5000',
-          advanced: '20000' 
+          advanced: '20000',
+          currency: 'AUD',
+          euroToAud: '',
+          audToCountryOfUser: '' 
         }
         this.openModal = this.openModal.bind(this)
     }
     openModal () {
         this.setState({isOpen: true})
     }
+
+    componentDidMount() {
+        axios.get(`https://ipapi.co/currency/`)
+        .then((resp) => {
+            this.setState({
+                currency: resp.data
+            })
+            return axios.get(`http://data.fixer.io/api/latest?access_key=38c34d79cfd8c8bd9f8d8fce23c678c9&symbols=${this.state.currency},AUD`);
+        })
+        .then((userCurr) => {
+            console.log(userCurr)
+            const euro = userCurr['data']["rates"]['AUD']
+            const otherCurr = userCurr['data']["rates"][this.state.currency]
+            this.setState({
+                euroToAud: userCurr['data']["rates"]['AUD'],
+                audToCountryOfUser: userCurr['data']["rates"][this.state.currency],
+                debug: Math.round(('75'/euro)*otherCurr),
+                audit: Math.round(('50'/euro)*otherCurr),
+                seo: Math.round(('1500'/euro)*otherCurr),
+                theme: Math.round(('50'/euro)*otherCurr),
+                basic: Math.round(('750'/euro)*otherCurr),
+                medium: Math.round(('5000'/euro)*otherCurr),
+                advanced: Math.round(('20000'/euro)*otherCurr)
+            })
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+
+    }
     render(){
+        
         return(
             <React.Fragment>
                 
@@ -73,9 +108,9 @@ class Shopify extends Component{
                                                     <h4 className="title">Shopify price details</h4>
                                                     
                                                     <ul className="liststyle">
-                                                        <li>Debugging $<CurrenyConversion val={this.state.debug}/> per hour</li>
-                                                        <li>Site Speed Audit (includes a report with actionable tasks) $<CurrenyConversion val={this.state.audit}/></li>
-                                                        <li>SEO Boost $<CurrenyConversion val={this.state.seo}/> ( 80+ mobile 95+ desktop google site speed score )
+                                                        <li>Debugging: ${this.state.debug} {this.state.currency} per hour</li>
+                                                        <li>Site Speed Audit: ${this.state.audit} {this.state.currency} (includes a report with actionable tasks)</li>
+                                                        <li>SEO Boost: ${this.state.seo} {this.state.currency} ( 80+ mobile 95+ desktop google site speed score )
                                                             <ul className="liststyle">
                                                                 <li>Blocking Js removed and made asynchronous</li>
                                                                 <li>Image Optimisation</li>
@@ -84,13 +119,14 @@ class Shopify extends Component{
                                                                 <li>Theme Refactor</li>
                                                             </ul>
                                                         </li>
-                                                        <li>Theme Customisation $<CurrenyConversion val={this.state.theme}/> per hour</li>
-                                                        <li>Shopify Application Development</li>
+                                                        <li>Theme Customisation: ${this.state.theme} {this.state.currency} per hour</li>
+                                                        <li>Shopify Application Development:
                                                         <ul className="liststyle">
-                                                            <li>Basic $<CurrenyConversion val={this.state.basic}/></li>
-                                                            <li>Medium $<CurrenyConversion val={this.state.medium}/></li>
-                                                            <li>Advanced $<CurrenyConversion val={this.state.advanced}/>+</li>
+                                                            <li>Basic ${this.state.basic} {this.state.currency}</li>
+                                                            <li>Medium ${this.state.medium} {this.state.currency}</li>
+                                                            <li>Advanced ${this.state.advanced} {this.state.currency}+</li>
                                                         </ul>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
