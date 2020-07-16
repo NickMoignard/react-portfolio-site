@@ -37,17 +37,37 @@ import DarkPortfolioLanding from './dark/PortfolioLanding';
 // Element Layout
 import Service from "./elements/Service";
 import Shopify from './elements/Shopify';
-import ReactJS from "./elements/ReactJS";
-import Ruby from "./elements/Ruby";
-import Javascript from "./elements/Javascript";
-import PHP from "./elements/PHP";
-import DevOp from "./elements/DevOp";
+import SoftDev from "./elements/SoftDev";
+import WebDev from "./elements/WebDev";
+import Consulting from "./elements/Consulting";
 import About from "./elements/About";
 import Contact from "./elements/Contact";
 import PortfolioDetails from "./elements/PortfolioDetails";
 import Blog from "./elements/Blog";
 import BlogDetails from "./elements/BlogDetails";
 import error404 from "./elements/error404";
+
+//Shopify
+import ShopifyDebug from './elements/shopify/ShopifyDebug';
+import SpeedAudit from './elements/shopify/SpeedAudit';
+import SeoBoost from './elements/shopify/SeoBoost';
+import ThemeCustomise from './elements/shopify/ThemeCustomise';
+import ShopifyAppDev from './elements/shopify/ShopifyAppDev';
+
+//Web Dev
+import WebDebug from './elements/web/WebDebug';
+import CompleteWebsite from './elements/web/CompleteWebsite';
+import NewFeatures from './elements/web/NewFeatures';
+
+//Consulting
+import ItConsulting from './elements/consulting/ItConsulting';
+import Copywriting from './elements/consulting/Copywriting';
+import DataAnalysis from './elements/consulting/DataAnalysis';
+import ServerAdmin from './elements/consulting/ServerAdmin';
+
+
+
+//Software Dev
 
 
 // Blocks Layout
@@ -96,15 +116,37 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/interior-landing`} component={InteriorLanding}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/corporate-business`} component={CorporateBusiness}/>
 
+                    {/* Shopify Layout */}
+                    <Route exact path={`${process.env.PUBLIC_URL}/shopify-debug`} component={ShopifyDebug}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/speed-audit`} component={SpeedAudit}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/seo-boost`} component={SeoBoost}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/theme-customise`} component={ThemeCustomise}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/shopify-app-dev`} component={ShopifyAppDev}/>
+                    
+                    {/* Web Dev Layout */}
+                    <Route exact path={`${process.env.PUBLIC_URL}/web-debug`} component={WebDebug}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/complete-website`} component={CompleteWebsite}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/new-features`} component={NewFeatures}/>
+
+                    {/* Consulting Layout */}
+                    <Route exact path={`${process.env.PUBLIC_URL}/it-consulting`} component={ItConsulting}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/copywriting`} component={Copywriting}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/data-analysis`} component={DataAnalysis}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/server-admin`} component={ServerAdmin}/>
+
+
+                    {/* Soft Dev Layout */}
+
+
+
+
 
                     {/* Element Layot */}
                     <Route exact path={`${process.env.PUBLIC_URL}/service`} component={Service}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/shopify`} component={Shopify}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/react-js`} component={ReactJS}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/ruby`} component={Ruby}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/javascript`} component={Javascript}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/php`} component={PHP}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/dev-ops`} component={DevOp}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/web-dev`} component={WebDev}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/consulting`} component={Consulting}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/software-dev`} component={SoftDev}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>

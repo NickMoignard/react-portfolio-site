@@ -59,12 +59,6 @@ class Footer extends Component{
                                             </div>
                                         </div>
                                         {/* End Single Widget  */}
-
-                                        <div className="col-lg-12">
-                                            <div className="copyright-text">
-                                                <p>Copyright © 2020 Rainbow-Themes. All Rights Reserved.</p>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

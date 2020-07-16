@@ -11,31 +11,37 @@ const ServiceList = [
     {
         icon: <FiCast />,
         title: 'Consulting Services',
+        link: '/consulting',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
         icon: <FiLayers />,
         title: 'Bespoke Software Development',
+        link: '/software-dev',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
         icon: <FiUsers />,
-        title: 'Team Augmentation',
+        title: 'Professional Services',
+        link: '/professional-services',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
         icon: <FiMonitor />,
         title: 'Shopify Solutions',
+        link: '/shopify',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
         icon: <FiCast />,
         title: 'Website Development',
+        link: '/web-dev',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
         icon: <FiMonitor />,
-        title: 'Marketing & Reporting',
+        title: 'Software Security',
+        link: '/software-security',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
 ]
@@ -64,7 +70,7 @@ class Service extends Component{
                         <div className="row service-one-wrapper">
                             {ServiceList.map( (val , i) => (
                                 <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
-                                    <a href="/service-details">
+                                    <a href={val.link}>
                                         <div className="service service__style--2">
                                             <div className="icon">
                                                 {val.icon}

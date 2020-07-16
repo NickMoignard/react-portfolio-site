@@ -14,7 +14,7 @@ import Footer from "../component/footer/Footer";
 class About extends Component{
     render(){
         let title = 'About',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going.';
+        description = 'We’re a Melbourne-based digital product studio providing expert advice and software solutions. We can help adapt your existing processes or start from scratch on your latest project, with a versatile approach and focus on the bottom line that leaves more money in your pocket.';
         return(
             <React.Fragment>
                 <PageHelmet pageTitle='About' />
@@ -64,8 +64,8 @@ class About extends Component{
                                             </div>
                                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                                 <div className="about-us-list">
-                                                    <h3 className="title">Who we are</h3>
-                                                    <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                    <h3 className="title">Our Clients</h3>
+                                                    <p>We build lasting friendships with each and every one of our clients so that we can deliver the solutions they need on time, all the time. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -103,7 +103,7 @@ class About extends Component{
                             <div className="col-lg-12">
                                 <div className="section-title service-style--3 text-center mb--25">
                                     <h2 className="title">Our Team</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <p>We work with a network of talented/expert/brilliant freelancers, allowing us to bring a diverse skill set and over X years of combined experience to every project.</p>
                                 </div>
                             </div>
                         </div>

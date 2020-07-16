@@ -51,53 +51,47 @@ class Header extends Component{
                         <nav className="mainmenunav d-lg-block">
                             <ul className="mainmenu">
                                 <li className="has-droupdown"><Link to="/">Home</Link></li>
-                                <li className="has-droupdown"><Link to="/service" >Service</Link>
+                                <li className="has-droupdown"><Link to="/shopify" >Shopify</Link>
                                     <ul className="submenu">
-                                        <li><Link to="/service">Service</Link></li>
-                                        <li><Link to="/Shopify">Shopify</Link></li>
-                                        <li><Link to="/react-js">React JS</Link></li>
-                                        <li><Link to="/ruby">Ruby</Link></li>
-                                        <li><Link to="/javascript">Javascript</Link></li>
-                                        <li><Link to="/php">PHP</Link></li>
-                                        <li><Link to="/dev-ops">Development Operations</Link></li>
+                                        <li><Link to="/shopify-debug">Debugging</Link></li>
+                                        <li><Link to="/speed-audit">Site Speed Audit</Link></li>
+                                        <li><Link to="/seo-boost">SEO Boost</Link></li>
+                                        <li><Link to="/theme-customise">Theme Customisation</Link></li>
+                                        <li><Link to="/shopify-app-dev">Shopify App Development</Link></li>
+                                    </ul>
+                                </li>
+                                <li className="has-droupdown"><Link to="/web-dev" >Web Development</Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/web-debug">Debugging</Link></li>
+                                        <li><Link to="/complete-website">Complete Website</Link></li>
+                                        <li><Link to="/new-features">New Features</Link></li>
+                                    </ul>
+                                </li>
+                                <li className="has-droupdown"><Link to="/consulting" >Consulting</Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/it-consulting">IT Consultation</Link></li>
+                                        <li><Link to="/copywriting">Copywriting</Link></li>
+                                        <li><Link to="/data-analysis">Data Analysis</Link></li>
+                                        <li><Link to="/server-admin">Server Administration</Link></li>
+                                    </ul>
+                                </li>
+                                <li className="has-droupdown"><Link to="/software-dev" >Software Development</Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/consulting">Consulting Services</Link></li>
+                                        <li><Link to="/software-dev">Software Development</Link></li>
+                                        <li><Link to="/professional-services">Professional Services</Link></li>
+                                        <li><Link to="/shopify">Shopify</Link></li>
+                                        <li><Link to="/web-dev">Website Development</Link></li>
+                                        <li><Link to="/software-security">Software Security</Link></li>
                                     </ul>
                                 </li>
                                 <li><Link to="/about" >About</Link></li>
-
-                                <li className="has-droupdown"><Link to="#pages" >Pages</Link>
-                                    <ul className="submenu">
-                                        <li><Link to="/blog">Blog List</Link></li>
-                                        <li><Link to="/blog-details">Blog Details</Link></li>
-                                        <li><Link to="/service">Service</Link></li>
-                                        <li><Link to="/service-details">Service Details</Link></li>
-                                        <li><Link to="/portfolio">Portfolio</Link></li>
-                                        <li><Link to="/portfolio-details">Portfolio Details</Link></li>
-                                        <li><Link to="/404">404</Link></li>
-                                    </ul>
-                                </li>
-                                <li className="has-droupdown"><Link to="#" >Blocks</Link>
-                                    <ul className="submenu">
-                                        <li><Link to="/portfolio">Portfolio</Link></li>
-                                        <li><Link to="/team">Team</Link></li>
-                                        <li><Link to="/service">Service</Link></li>
-                                        <li><Link to="/video-popup">Video Popup</Link></li>
-                                        <li><Link to="/progressbar">Progressbar</Link></li>
-                                        <li><Link to="/gallery">Gallery</Link></li>
-                                        <li><Link to="/counters">Counters</Link></li>
-                                        <li><Link to="/blog">Blog List</Link></li>
-                                        <li><Link to="/clint-logo">Clint Logo</Link></li>
-                                        <li><Link to="/contact-form">Contact Form</Link></li>
-                                        <li><Link to="/google-map">Google Map</Link></li>
-                                        <li><Link to="/columns">Columns</Link></li>
-                                        <li><Link to="/pricing-table">Pricing Table</Link></li>
-                                    </ul>
-                                </li>
+                                <li className="has-droupdown"><Link to="/blog" >Blog</Link></li>
                                 <li><Link to="/contact" >Contact</Link></li>
                             </ul>
                         </nav>
                         <div className="header-btn">
                             <a className="rn-btn" href="https://discord.gg/uP3UzxZ">
-
                                 <span>chat now</span>
                             </a>
                         </div>
