@@ -67,8 +67,8 @@ import ServerAdmin from './elements/consulting/ServerAdmin';
 
 
 
-//Software Dev
-
+//Mobile Dev
+import MobileDev from './elements/mobile/MobileDev';
 
 // Blocks Layout
 
@@ -135,8 +135,8 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/server-admin`} component={ServerAdmin}/>
 
 
-                    {/* Soft Dev Layout */}
-
+                    {/* Mobile Dev Layout */}
+                    <Route exact path={`${process.env.PUBLIC_URL}/mobile-dev`} component={MobileDev}/>
 
 
 

@@ -107,10 +107,10 @@ class Shopify extends Component{
                                                     <p>hidden in the middle of text. All the Lorem Ipsum generators tend toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet.</p> */}
                                                     <h4 className="title">Shopify price details</h4>
                                                     
-                                                    <ul className="liststyle">
-                                                        <li>Debugging: ${this.state.debug} {this.state.currency} per hour</li>
-                                                        <li>Site Speed Audit: ${this.state.audit} {this.state.currency} (includes a report with actionable tasks)</li>
-                                                        <li>SEO Boost: ${this.state.seo} {this.state.currency} ( 80+ mobile 95+ desktop google site speed score )
+                                                    <ul className="liststyle list-links">
+                                                        <li><a href="/shopify-debug">Debugging</a>: ${this.state.debug} {this.state.currency} per hour</li>
+                                                        <li><a href="/speed-audit">Site Speed Audit</a>: ${this.state.audit} {this.state.currency} (includes a report with actionable tasks)</li>
+                                                        <li><a href="/seo-boost">SEO Boost</a>: ${this.state.seo} {this.state.currency} (50+ mobile 90+ desktop google site speed score)
                                                             <ul className="liststyle">
                                                                 <li>Blocking Js removed and made asynchronous</li>
                                                                 <li>Image Optimisation</li>
@@ -119,8 +119,8 @@ class Shopify extends Component{
                                                                 <li>Theme Refactor</li>
                                                             </ul>
                                                         </li>
-                                                        <li>Theme Customisation: ${this.state.theme} {this.state.currency} per hour</li>
-                                                        <li>Shopify Application Development:
+                                                        <li><a href="/theme-customise">Theme Customisation</a>: ${this.state.theme} {this.state.currency} per hour</li>
+                                                        <li><a href="/shopify-app-dev">Shopify Application Development</a>:
                                                         <ul className="liststyle">
                                                             <li>Basic ${this.state.basic} {this.state.currency}</li>
                                                             <li>Medium ${this.state.medium} {this.state.currency}</li>

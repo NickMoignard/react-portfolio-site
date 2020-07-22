@@ -12,37 +12,37 @@ const ServiceList = [
         icon: <FiCast />,
         title: 'Consulting Services',
         link: '/consulting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'Not sure what you need but know you need a tech guy keep end-to-end software development fast and economically sound.'
     },
     {
         icon: <FiLayers />,
         title: 'Bespoke Software Development',
         link: '/software-dev',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'We work with you to create mobile app solutions and responsive websites that enhance productivity and grow customer engagement.'
     },
     {
         icon: <FiUsers />,
         title: 'Professional Services',
         link: '/professional-services',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'Our developers provide your project with extra skills and resources, so your existing software team gets the right support.'
     },
     {
         icon: <FiMonitor />,
         title: 'Shopify Solutions',
         link: '/shopify',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'Our marketing and software specialists work together to optimize your eCommerce platform, transforming more clicks into sales.'
     },
     {
         icon: <FiCast />,
         title: 'Website Development',
         link: '/web-dev',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'From backend to frontend development, we build responsive websites that help your business establish a distinctive online presence.'
     },
     {
         icon: <FiMonitor />,
-        title: 'Software Security',
-        link: '/software-security',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: 'Mobile App Development',
+        link: '/mobile-dev',
+        description: 'We work with you to create mobile app solutions that enhance business productivity and grow customer engagement.'
     },
 ]
 class Service extends Component{
