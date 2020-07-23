@@ -50,7 +50,6 @@ class Header extends Component{
                     <div className="header-right">
                         <nav className="mainmenunav d-lg-block">
                             <ul className="mainmenu">
-                                <li className="has-droupdown"><Link to="/">Home</Link></li>
                                 <li className="has-droupdown"><Link to="/shopify" >Shopify</Link>
                                     <ul className="submenu">
                                         <li><Link to="/shopify-debug">Debugging</Link></li>
@@ -85,9 +84,6 @@ class Header extends Component{
                                         <li><Link to="/software-security">Software Security</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link to="/about" >About</Link></li>
-                                <li className="has-droupdown"><Link to="/blog" >Blog</Link></li>
-                                <li><Link to="/contact" >Contact</Link></li>
                             </ul>
                         </nav>
                         <div className="header-btn">

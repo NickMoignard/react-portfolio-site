@@ -14,6 +14,8 @@ import BlogContent from "../elements/blog/BlogContent";
 import TechLogos from "../elements/TechLogos";
 import Helmet from "../component/common/Helmet";
 
+{/* Main Page*/}
+
 class MainDemo extends Component{
     render(){
         const PostList = BlogContent.slice(0 , 3);
