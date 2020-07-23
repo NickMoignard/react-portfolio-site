@@ -28,7 +28,7 @@ class Contact extends Component{
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                  {/* Start Breadcrump Area */}
-                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--17"  data-black-overlay="6">
+                 <div className="rn-page-title-area pt--120 pb--190"  style={{backgroundColor: "#101010"}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
