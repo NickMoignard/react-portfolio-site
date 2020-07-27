@@ -65,7 +65,14 @@ import Copywriting from './elements/consulting/Copywriting';
 import DataAnalysis from './elements/consulting/DataAnalysis';
 import ServerAdmin from './elements/consulting/ServerAdmin';
 
-
+// Case Study
+import Scuffed from './elements/case/Scuffed';
+import Healthish from './elements/case/Healthish';
+import CoolShirtz from './elements/case/CoolShirtz';
+import Hey from './elements/case/Hey';
+import Drop from './elements/case/Drop';
+import SMT from './elements/case/SMT';
+import Winkalotz from './elements/case/Winkalotz';
 
 //Mobile Dev
 import MobileDev from './elements/mobile/MobileDev';
@@ -136,10 +143,16 @@ class Root extends Component{
 
 
                     {/* Mobile Dev Layout */}
-                    <Route exact path={`${process.env.PUBLIC_URL}/mobile-dev`} component={MobileDev}/>
+                    {/* <Route exact path={`${process.env.PUBLIC_URL}/mobile-dev`} component={MobileDev}/> */}
 
-
-
+                    {/* Case Studies */}
+                    <Route exact path={`${process.env.PUBLIC_URL}/case-study/scuffed`} component={Scuffed}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/case-study/healthish`} component={Healthish}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/case-study/cool-shirtz`} component={CoolShirtz}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/case-study/hey`} component={Hey}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/case-study/drop-bottle`} component={Drop}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/case-study/SMT`} component={SMT}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/case-study/winkalotz`} component={Winkalotz}/>
 
                     {/* Element Layot */}
                     <Route exact path={`${process.env.PUBLIC_URL}/service`} component={Service}/>

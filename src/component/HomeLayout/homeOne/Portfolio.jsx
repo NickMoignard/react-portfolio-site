@@ -5,35 +5,48 @@ import { portfolioSlick2 } from "../../../page-demo/script";
 
 const PortfolioList = [
     {
+        image: 'image-4',
+        category: 'Shopify',
+        title: ' Scuffed.store',
+        url:"/case-study/scuffed"
+    },
+    {
         image: 'image-1',
-        category: 'Development',
-        title: ' Getting tickets to the big show'
+        category: 'Shopify',
+        title: ' Healthish',
+        url:"/case-study/healthish"
     },
     {
         image: 'image-2',
-        category: 'Development',
-        title: ' Getting tickets to the big show'
+        category: 'Shopify',
+        title: ' Cool-Shirtz',
+        url:"/case-study/cool-shirtz"
     },
     {
         image: 'image-3',
         category: 'Development',
-        title: ' Getting tickets to the big show'
+        title: ' Hey Influencers',
+        url:"/case-study/hey"
     },
     {
         image: 'image-4',
-        category: 'Development',
-        title: ' Getting tickets to the big show'
+        category: 'Shopify',
+        title: ' Drop Bottle',
+        url:"/case-study/drop-bottle"
     },
     {
         image: 'image-3',
-        category: 'Development',
-        title: ' Getting tickets to the big show'
+        category: 'Shopify',
+        title: ' Skinny Me Tea',
+        url:"/case-study/SMT"
     },
     {
         image: 'image-4',
-        category: 'Development',
-        title: ' Getting tickets to the big show'
+        category: 'Shopify',
+        title: ' Winkalotz',
+        url:"/case-study/winkalotz"
     }
+    
 ]
 
 class Portfolio extends Component{
@@ -66,7 +79,7 @@ class Portfolio extends Component{
                                             <p>{value.category}</p>
                                             <h4><a href="/portfolio-details">{value.title}</a></h4>
                                             <div className="portfolio-button">
-                                                <a className="rn-btn" href="/portfolio-details">Case Study</a>
+                                                <a className="rn-btn" href={value.url}>Case Study</a>
                                             </div>
                                         </div>
                                     </div>
