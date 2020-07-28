@@ -3,45 +3,46 @@ import Slider from "react-slick";
 import { portfolioSlick2 } from "../../../page-demo/script";
 
 
+
 const PortfolioList = [
     {
-        image: 'image-4',
+        image: '/assets/images/our-work/scuffed.webp',
         category: 'Shopify',
         title: ' Scuffed.store',
         url:"/case-study/scuffed"
     },
     {
-        image: 'image-1',
+        image: '/assets/images/our-work/healthish.webp',
         category: 'Shopify',
         title: ' Healthish',
         url:"/case-study/healthish"
     },
     {
-        image: 'image-2',
+        image: '/assets/images/our-work/coolshirtz.webp',
         category: 'Shopify',
         title: ' Cool-Shirtz',
         url:"/case-study/cool-shirtz"
     },
     {
-        image: 'image-3',
+        image: '/assets/images/our-work/hey.webp',
         category: 'Development',
         title: ' Hey Influencers',
         url:"/case-study/hey"
     },
     {
-        image: 'image-4',
+        image: '/assets/images/our-work/drop-bottle.webp',
         category: 'Shopify',
         title: ' Drop Bottle',
         url:"/case-study/drop-bottle"
     },
     {
-        image: 'image-3',
+        image: '/assets/images/our-work/SMT.webp',
         category: 'Shopify',
         title: ' Skinny Me Tea',
         url:"/case-study/SMT"
     },
     {
-        image: 'image-4',
+        image: '/assets/images/our-work/wink.webp',
         category: 'Shopify',
         title: ' Winkalotz',
         url:"/case-study/winkalotz"
@@ -71,8 +72,8 @@ class Portfolio extends Component{
                             {PortfolioList.map((value , index) => (
                                 <div className="portfolio" key={index}>
                                     <div className="thumbnail-inner">
-                                        <div className={`thumbnail ${value.image}`}></div>
-                                        <div className={`bg-blr-image ${value.image}`}></div>
+                                        <img src={value.image} className={`thumbnail`}></img>
+                                        <img src={value.image} className={`bg-blr-image`}></img>
                                     </div>
                                     <div className="content">
                                         <div className="inner">
