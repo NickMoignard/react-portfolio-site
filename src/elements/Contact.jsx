@@ -3,7 +3,7 @@ import PageHelmet from "../component/common/Helmet";
 import { FiHeadphones , FiMail , FiMapPin } from "react-icons/fi";
 import GoogleMapReact from 'google-map-react';
 import ContactTwo from "../elements/contact/ContactTwo";
-import TechLogos from "../elements/TechLogos";
+import TechLogos from "../elements/TechLogosMain";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
@@ -107,6 +107,7 @@ class Contact extends Component{
                 <div className="rn-contact-map-area position-relative">
                     <div style={{ height: '650px', width: '100%' }}>
                         <GoogleMapReact
+                        bootstrapURLKeys={{ key: 'AIzaSyCucnDHxtJnzyoeFtHGoCb7ftzfaywwZ_4' }}
                         defaultCenter={this.props.center}
                         defaultZoom={this.props.zoom}
                         >
