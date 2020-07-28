@@ -11,7 +11,7 @@ class About extends Component{
                         <div className="row row--35 align-items-center">
                             <div className="col-lg-5 col-md-12">
                                 <div style={{marginTop:"initial"}} className="thumbnail">
-                                    <img className="w-100"  src="https://cdn.pixabay.com/photo/2017/03/04/12/15/programming-2115930_960_720.jpg" alt="About Images"/>
+                                    {/* <img className="w-100"  src="https://cdn.pixabay.com/photo/2017/03/04/12/15/programming-2115930_960_720.jpg" alt="About Images"/> */}
                                 </div>
                             </div>
 
