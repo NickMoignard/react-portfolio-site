@@ -5,11 +5,11 @@ const ServiceList = [
     {
         icon: <FiCast />,
         title: 'Consulting Services',
-        description: 'Not sure what you need but know you need a tech guy keep end-to-end software development fast and economically sound.'
+        description: 'Not sure what you need but know you need a tech guy. Keep end-to-end software development fast and economically sound.'
     },
     {
         icon: <FiLayers />,
-        title: 'Bespoke Software Development',
+        title: 'Software Development',
         description: 'We work with you to create mobile app solutions and responsive websites that enhance productivity and grow customer engagement.'
     },
     {
