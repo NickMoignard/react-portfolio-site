@@ -22,9 +22,9 @@ class CounterThree extends Component{
                 countTitle: 'Desktop Site Increase',
             },
             {
-                countNum : 69,
-                countTitle: 'Combined years of experience.',
-            },
+                countNum : 90,
+                countTitle: 'GTMetrix Score',
+            }
         ];
 
         return(
