@@ -27,7 +27,7 @@ const ServiceList = [
 class ServiceTwo extends Component{
     render(){
         let title = 'Services',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.';
+        description = '';
         return(
             <React.Fragment>
                 <div className="row">
@@ -44,7 +44,7 @@ class ServiceTwo extends Component{
                         <div className="row service-one-wrapper">
                             {ServiceList.map( (val , i) => (
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-12" key={i}>
-                                    <a href="/service">
+                                    <a href="/contact">
                                         <div className="service service__style--2">
                                             <div className="icon">
                                                 {val.icon}

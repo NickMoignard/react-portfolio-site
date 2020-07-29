@@ -14,16 +14,24 @@ import BlogContent from "../elements/blog/BlogContent";
 import TechLogos from "../elements/TechLogos";
 import Helmet from "../component/common/Helmet";
 
+
+
 {/* Main Page*/}
 
 class MainDemo extends Component{
+    componentDidMount(){
+        const el = document.getElementById('loader-container');
+        if (el) {
+            el.classList.add('loader--hide');
+        }
+    }
     render(){
         const PostList = BlogContent.slice(0 , 3);
         return(
+            
             <div className="active-dark"> 
                 <Helmet pageTitle="Home" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
-
                 {/* Start Slider Area   */}
                 <div className="slider-wrapper">
                     <SliderOne />
@@ -55,7 +63,7 @@ class MainDemo extends Component{
 
 
                 {/* Start Blog Area */}
-                <div className="rn-blog-area pt--120 bg_color--1 mb-dec--30">
+                {/* <div className="rn-blog-area pt--120 bg_color--1 mb-dec--30">
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
@@ -91,7 +99,7 @@ class MainDemo extends Component{
                             ))}
                         </div>    
                     </div>    
-                </div>
+                </div> */}
                 {/* End Blog Area */}
 
                 {/* Start Brand Area */}
