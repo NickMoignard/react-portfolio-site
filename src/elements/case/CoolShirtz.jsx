@@ -1,20 +1,21 @@
 import React, { Component } from "react";
 import PageHelmet from "../../component/common/Helmet";
 import ModalVideo from 'react-modal-video';
-import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
+import {FaTwitter ,FaInstagram ,FaFacebookF , FaGlobe} from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
+import CounterThree from "../../elements/counters/CounterThree";
 import Header from "../../component/header/Header";
 import Footer from "../../component/footer/Footer";
-
 const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
-    {Social: <FaTwitter /> , link: 'https://twitter.com/'},
+    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/healthish'},
+    {Social: <FaGlobe /> , link: 'https://healthish.com/'},
+    {Social: <FaInstagram /> , link: 'https://www.instagram.com/healthish/'},
+    {Social: <FaTwitter /> , link: 'https://twitter.com/healthish'},
 ]
+const title = 'Healthish';
 
-class PortfolioDetails extends Component{
+class Healthish extends Component{
     constructor () {
         super()
         this.state = {
@@ -28,7 +29,7 @@ class PortfolioDetails extends Component{
     render(){
         return(
             <React.Fragment>
-                <PageHelmet pageTitle='Portfolio Details' />
+                <PageHelmet pageTitle={title} />
 
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
                 
@@ -38,8 +39,8 @@ class PortfolioDetails extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">Getting tickets to the big show</h2>
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
+                                    <h2 className="title theme-gradient">{title}</h2>
+                                    <p>Coolshirtz is a clothing company focused on creating eye-catching yet relatable apparel. </p>
                                 </div>
                             </div>
                         </div>
@@ -54,25 +55,25 @@ class PortfolioDetails extends Component{
                             <div className="col-lg-12">
                                 <div className="portfolio-details">
                                     <div className="inner">
-                                        <h2>Trydo</h2>
-                                        <p className="subtitle">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commod viverra maecenas accumsan lacus vel facilisis. ut labore et dolore magna aliqua. </p>
-
+                                        <h2>{title}</h2>
+                                        <p>To match their distinctive store experience, Coolshirtz needed their store to be made in a way that Shopify default themes couldn’t satisfy. Based on their designs, we completely rebuilt the entire site with new assets, animations and layouts. Every aspect of the new website was revitalised yet still on Shopify’s familiar platform. </p>
+                                        <p>A fresh animated logo was added with eyeballs to track the user’s mouse pointer as they interacted with the website. We added dark mode along with a custom search overlay to make browsing less intrusive. For international customers, a currency switcher was added to display prices for multiple countries. And products which weren’t ready for sale had pre-order sections added to them. </p>
+                                        <CounterThree mobile={355} desktop={47} />
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">
                                                 <span>Branch</span>
-                                                <h4>Ability</h4>
+                                                <h4>Development</h4>
                                             </div>
 
                                             <div className="port-view">
                                                 <span>Project Types</span>
-                                                <h4>Website</h4>
+                                                <h4>Shopify, SEO Boost</h4>
                                             </div>
 
-                                            <div className="port-view">
+                                            {/* <div className="port-view">
                                                 <span>Program</span>
                                                 <h4>View Project</h4>
-                                            </div>
+                                            </div> */}
                                         </div>
 
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
@@ -111,8 +112,8 @@ class PortfolioDetails extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center">
-                                    <span className="theme-color font--18 fontWeight600">Related Work</span>
-                                    <h2>Our More Projects</h2>
+                                    {/* <span className="theme-color font--18 fontWeight600">Related Work</span> */}
+                                    <h2>Related Work</h2>
                                 </div>
                             </div>
                         </div>
@@ -167,4 +168,4 @@ class PortfolioDetails extends Component{
         )
     }
 }
-export default PortfolioDetails;
+export default Healthish;
