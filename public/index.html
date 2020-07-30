@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html-page" class="stop-scrolling" lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -33,7 +33,7 @@
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
-    <style scoped lang="scss">
+    <style>
       body {
         background-color: #1d1d24 !important;
       }
@@ -47,7 +47,10 @@
           transition: opacity 500ms linear, visibility 0s linear 500ms;
         }
 
-
+        .stop-scrolling {
+          height: 100%;
+          overflow: hidden;
+        }
 
         .loading-iamge{
             z-index: 6970;

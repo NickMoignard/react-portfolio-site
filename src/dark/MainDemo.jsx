@@ -19,21 +19,22 @@ import Helmet from "../component/common/Helmet";
 {/* Main Page*/}
 
 class MainDemo extends Component{
-    sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
+    // sleep(ms) {
+    //     return new Promise(resolve => setTimeout(resolve, ms));
+    // }
 
-    async remove() {
-        let el = document.getElementById('loader-container');
-        await this.sleep(2000);
-        el.classList.add('--hide');
-        el = document.getElementById('main-root');
-        el.classList.remove('--hide');
-    }
+    // async remove() {
+    //     let el = document.getElementById('loader-container');
+    //     await this.sleep(2000);
+    //     el.classList.add('--hide');
+    //     el = document.getElementById('main-root');
+    //     el.classList.remove('--hide');
+    //     document.getElementById("html-page").classList.remove("stop-scrolling")
+    // }
 
-    componentDidMount(){   
-        this.remove();
-    }
+    // componentDidMount(){   
+    //     this.remove();
+    // }
 
     render(){
         const PostList = BlogContent.slice(0 , 3);

@@ -98,6 +98,30 @@ import * as serviceWorker from './serviceWorker';
 
 
 class Root extends Component{
+    sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async remove() {
+        try { 
+            let el = document.getElementById('loader-container');
+            await this.sleep(2000);
+            el.classList.add('--hide');
+            el = document.getElementById('main-root');
+            el.classList.remove('--hide');
+            document.getElementById("html-page").classList.remove("stop-scrolling")
+        }
+        catch (err) {
+            console.log(err);
+        }
+        document.getElementById("html-page").classList.remove("stop-scrolling")
+    }
+
+    componentDidMount(){
+            this.remove();        
+    }
+
+
     render(){
         return(
             <BrowserRouter basename={'/'}>
