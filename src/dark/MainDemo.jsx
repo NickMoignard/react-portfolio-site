@@ -39,7 +39,7 @@ class MainDemo extends Component{
         const PostList = BlogContent.slice(0 , 3);
         return(
             
-            <div id="main-root" className="active-dark --hide"> 
+            <div id="main-root" className="active-dark"> 
                 <Helmet pageTitle="Home" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
                 {/* Start Slider Area   */}

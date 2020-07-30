@@ -10,6 +10,7 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -32,38 +33,51 @@
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
-    <style>
+    <style scoped lang="scss">
       body {
         background-color: #1d1d24 !important;
       }
       .--hide {
-        visibility: hidden;
-        -webkit-transition: opacity 0.5s, visibility 0.5s;
-        transition: opacity 0.5s, visibility 0.5s;
-      }
-      .--show {
-        -webkit-transition: opacity 0.5s, visibility 0.5s;
-        transition: opacity 0.5s, visibility 0.5s;
-        visibility: visible;
-      }
+          visibility:hidden;
+          opacity: 0;
+          -moz-transition: opacity 500ms linear, visibility 0s linear 500ms;
+          -o-transition: opacity 500ms linear, visibility 0s linear 500ms;
+          -webkit-transition: opacity 500ms linear, visibility 0s linear;
+          -webkit-transition-delay: 0s, 500ms;
+          transition: opacity 500ms linear, visibility 0s linear 500ms;
+        }
 
-      .loading-iamge{
-        left: 50%;
-        display: block;
-        position: absolute;
-        max-width: 30%;
-        float: left;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        
-      }
+
+
+        .loading-iamge{
+            z-index: 6970;
+            left: 50%;
+            display: block;
+            position: absolute;
+            max-width: 30%;
+            float: left;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .fullscreen {
+            z-index: 6969;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+        }
     </style>
   </head>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <div id="loader-container"><img class="loading-iamge" src="%PUBLIC_URL%/assets/images/logo/MDS_D.png"></img></div>
+    <div id="loader-container"><div class="fullscreen"></div><img class="loading-iamge" src="%PUBLIC_URL%/assets/images/logo/MDS_D.png"></img></div>
     </div>
     <!--
       This HTML file is a template.
