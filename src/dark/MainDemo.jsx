@@ -19,17 +19,27 @@ import Helmet from "../component/common/Helmet";
 {/* Main Page*/}
 
 class MainDemo extends Component{
-    componentDidMount(){
-        const el = document.getElementById('loader-container');
-        if (el) {
-            el.classList.add('loader--hide');
-        }
+    sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
+
+    async remove() {
+        let el = document.getElementById('loader-container');
+        await this.sleep(2000);
+        el.classList.add('--hide');
+        el = document.getElementById('main-root');
+        el.classList.remove('--hide');
+    }
+
+    componentDidMount(){   
+        this.remove();
+    }
+
     render(){
         const PostList = BlogContent.slice(0 , 3);
         return(
             
-            <div className="active-dark"> 
+            <div id="main-root" className="active-dark --hide"> 
                 <Helmet pageTitle="Home" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
                 {/* Start Slider Area   */}
